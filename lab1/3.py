@@ -1,4 +1,4 @@
-def fib(previous, current, target):
+def fib(previous: int, current: int, target: int) -> bool:
     if target == 0:
         return True
     elif current == target:
