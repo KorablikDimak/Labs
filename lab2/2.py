@@ -31,7 +31,7 @@ o = int(input())
 
 #транспонирование матрицы
 if o == 1:
-    print(np.transpose(matrix))
+    print(f"транспонированная матрица =\n{np.transpose(matrix)}")
 
 #умножение матриц
 elif o == 2:
@@ -56,10 +56,10 @@ elif o == 2:
             k = 0
 
         matrixm = np.array(matrix2)
-        print(np.dot(matrix, matrixm))
+        print(f"результат умножения =\n{np.dot(matrix, matrixm)}")
     else:
         print("Неподходящая размерность")
 
 #нахождение ранга матрицы
 if o == 3:
-    print(np.linalg.matrix_rank(matrix))
+    print(f"ранг матрицы = {np.linalg.matrix_rank(matrix)}")

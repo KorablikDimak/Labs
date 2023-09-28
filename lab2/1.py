@@ -8,11 +8,11 @@ matrix2 = Matrix.from_list([[5, 8, 9],
                             [4, 5, 6],
                             [1, 2, 5]])
 
-matrix3 = matrix1 * matrix2
-print(f"matrix3 =\n{matrix3}")
+print(f"matrix1 =\n{matrix1}")
+print(f"matrix2 =\n{matrix2}")
 
-matrix4 = matrix1 + matrix2
-print(f"matrix4 =\n{matrix4}")
+print(f"matrix1 * matrix2 =\n{matrix1 * matrix2}")
+print(f"matrix1 + matrix2 =\n{matrix1 + matrix2}")
 
 print(f"det of matrix1 = {matrix1.det()}\n")
 print(f"det of matrix2 = {matrix2.det()}\n")
@@ -23,8 +23,8 @@ print(f"rank of matrix2 =\n{matrix2.rank()}")
 
 print(f"negative matrix1 =\n{-matrix1}")
 
-matrix5 = Matrix(3, 3).random()
-print(f"matrix5 =\n{matrix5}")
+matrix3 = Matrix(3, 3).random()
+print(f"matrix5 =\n{matrix3}")
 
-matrix6 = Matrix(2, 2).input()
-print(f"matrix6 =\n{matrix6}")
+matrix4 = Matrix(2, 2).input()
+print(f"matrix6 =\n{matrix4}")

@@ -38,6 +38,6 @@ for stroka in A:
     print(stroka)
 
 time_result = timeit.timeit("my_program", setup="from __main__ import my_program")
-print(time_result)
+print("собственный алгоритм (время в миллисекундах): ", time_result * 1000)
 time_result = timeit.timeit("numpy_program", setup="from __main__ import numpy_program")
-print(time_result)
+print("алгоритм numpy (время в миллисекундах): ", time_result * 1000)
