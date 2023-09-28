@@ -14,13 +14,11 @@ print(string)  # out: First second
 
 # list
 list = []
-n = 0
 for i in range(5):
-    list.append(n)
-    n += 1
+    list.append(i)
 
 for element in list:
-    print(element)  # out: 1 2 3 4 5
+    print(element)  # out: 0 1 2 3 4
 
 
 # tuple
