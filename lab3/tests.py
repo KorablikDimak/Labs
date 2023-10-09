@@ -16,7 +16,7 @@ for i in range(100000):
     items.append(random.random() * 1000 - 500)
 
 start_time = timeit.default_timer()
-algorithm.merge_sort(items, 0, 99999)
+algorithm.merge_sort(items)
 print(f"merge_sort time: {timeit.default_timer() - start_time}")
 
 check(items)
@@ -28,7 +28,7 @@ for i in range(100000):
     items.append(random.random() * 1000 - 500)
 
 start_time = timeit.default_timer()
-algorithm.quick_sort(items, 0, 99999)
+algorithm.quick_sort(items)
 print(f"quick_sort time: {timeit.default_timer() - start_time}")
 
 check(items)

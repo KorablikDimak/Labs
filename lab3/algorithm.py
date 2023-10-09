@@ -1,12 +1,16 @@
 import math
 
 
-def merge_sort(collection, start, end):
+def merge_sort(collection):
+    merge_sort_(collection, 0, len(collection) - 1)
+
+
+def merge_sort_(collection, start, end):
     if start >= end:
         return
     mid = (start + end) // 2
-    merge_sort(collection, start, mid)
-    merge_sort(collection, mid + 1, end)
+    merge_sort_(collection, start, mid)
+    merge_sort_(collection, mid + 1, end)
     merge(collection, start, mid, end)
 
 
@@ -37,13 +41,17 @@ def merge(collection, start, mid, end):
             i += 1
 
 
-def quick_sort(collection, start, end):
+def quick_sort(collection):
+    quick_sort_(collection, 0, len(collection) - 1)
+
+
+def quick_sort_(collection, start, end):
     if start >= end:
         return
     mid = partition(collection, start, end)
     if mid != 0:
-        quick_sort(collection, start, mid - 1)
-    quick_sort(collection, mid + 1, end)
+        quick_sort_(collection, start, mid - 1)
+    quick_sort_(collection, mid + 1, end)
 
 
 def partition(collection, start, end):
