@@ -58,7 +58,7 @@ def partition(collection, start, end):
     mid = start
 
     for i in range(start, end):
-        if collection[i] < collection[end] or collection[i] == collection[end]:
+        if collection[i] <= collection[end]:
             select = collection[mid]
             collection[mid] = collection[i]
             collection[i] = select
