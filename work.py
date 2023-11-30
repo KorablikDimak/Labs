@@ -10,6 +10,7 @@ def generate_combinations(string: str) -> set[str]:
     combinations.add(string)
     return combinations
 
+
 input_string = input("Введите строку: ")
 result = generate_combinations(input_string)
 print(result)
